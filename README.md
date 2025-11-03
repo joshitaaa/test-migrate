@@ -19,7 +19,6 @@ A basic e-commerce application built with Node.js, Express, and vanilla JavaScri
 - Node.js
 - Express.js
 - CORS middleware
-- Body-parser
 
 ### Frontend
 - HTML5

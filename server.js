@@ -1,6 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-const bodyParser = require('body-parser');
 const path = require('path');
 
 const app = express();
@@ -8,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(express.static('public'));
 
 // Sample product data
@@ -173,7 +172,7 @@ app.post('/api/checkout/:userId', (req, res) => {
   res.json({
     success: true,
     message: 'Order placed successfully',
-    orderId: Math.random().toString(36).substr(2, 9),
+    orderId: Math.random().toString(36).substring(2, 11),
     total: total.toFixed(2)
   });
 });

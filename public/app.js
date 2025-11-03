@@ -1,6 +1,6 @@
 // API Base URL
 const API_URL = window.location.origin;
-const USER_ID = 'user-' + Math.random().toString(36).substr(2, 9); // Simple user ID for demo
+const USER_ID = 'user-' + Math.random().toString(36).substring(2, 11); // Simple user ID for demo
 
 // State
 let products = [];
