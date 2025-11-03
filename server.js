@@ -63,6 +63,11 @@ const products = [
 ];
 
 // In-memory cart storage (in production, use a database)
+// Note: This is for demo purposes only. In production:
+// - Use a database for persistent storage
+// - Implement proper user authentication
+// - Use crypto.randomUUID() for order IDs
+// - Add session cleanup mechanisms
 const carts = {};
 
 // API Routes
